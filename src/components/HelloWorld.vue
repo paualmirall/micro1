@@ -1,16 +1,21 @@
 <template>
   <div class="hello">
-    {{ _.snakeCase('THIS IS MICROFRONTEND NUMBER 1') }}
+    {{ text }}
   </div>
 </template>
 
 <script>
-import _ from 'lodash'
+import _ from 'lodash';
 
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  computed: {
+    text() {
+      return _.snakeCase('THIS IS MICROFRONTEND NUMBER 1');
+    }
   }
 }
 </script>
