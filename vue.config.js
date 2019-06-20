@@ -6,14 +6,7 @@ module.exports = {
       : '/',
     configureWebpack: {
       plugins: [
-        new WebpackCdnPlugin({
-          modules: {
-            'vue': [
-              { name: 'vue', var: 'Vue', path: 'dist/vue.runtime.min.js' },
-              { name: 'lodash', var: '_', path: 'lodash.min.js' },
-            ]
-          },
-        }),
+        new WebpackCdnPlugin(),
       ]
     }
   }
