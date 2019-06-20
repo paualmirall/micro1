@@ -5,7 +5,6 @@
 </template>
 
 <script>
-// TODO REMOVE
 import _ from 'lodash';
 
 export default {
